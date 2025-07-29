@@ -1,0 +1,856 @@
+/* Custom CSS for PTSS Lab Landing Page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'General Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.main-container {
+    min-height: 100vh;
+    background-color: #e7e5e4;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.top-sections {
+    padding: 0 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-radius: 40px;
+    padding: 32px 64px 96px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Navigation */
+.navbar {
+    padding: 0;
+    margin-bottom: 112px;
+}
+
+.logo {
+    width: 120px;
+    height: 60px;
+}
+
+.nav-menu {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(4.15px);
+    border: 1px solid #a7f3d0;
+    border-radius: 100px;
+    padding: 20px 44px;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-item {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1c1917;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #14b8a6;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.text-teal {
+    color: #14b8a6 !important;
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+}
+
+.hero-images {
+    position: relative;
+    height: 300px;
+    width: 400px;
+}
+
+.hero-img-1 {
+    position: absolute;
+    top: 10px;
+    right: 290px;
+    width: 197px;
+    height: 216px;
+    border-radius: 30px;
+    mix-blend-mode: luminosity;
+}
+
+.hero-img-2 {
+    position: absolute;
+    top: -68px;
+    right: 42px;
+    width: 183px;
+    height: 129px;
+    border-radius: 30px;
+    mix-blend-mode: luminosity;
+}
+
+.hero-img-3 {
+    position: absolute;
+    bottom: -48px;
+    right: 151px;
+    width: 117px;
+    height: 138px;
+    border-radius: 30px;
+    mix-blend-mode: luminosity;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.hero-headline {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 52.8px;
+    color: #000;
+    margin-bottom: 44px;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    border: 1px solid #14b8a6;
+    border-radius: 100px;
+    background: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button span {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #164e63;
+}
+
+.hero-info-box {
+    position: absolute;
+    top: 91px;
+    right: 424px;
+    width: 306px;
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.info-item {
+    padding: 2px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1c1917;
+    line-height: 24px;
+}
+
+/* Hero Graph */
+.hero-graph {
+    position: absolute;
+    bottom: -196px;
+    right: 46.905px;
+    width: 547px;
+    height: 479px;
+}
+
+.graph-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.graph-text-main {
+    position: absolute;
+    top: 0;
+    left: 82px;
+    width: 76px;
+    height: 41px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    color: #14b8a6;
+}
+
+.graph-text-small {
+    position: absolute;
+    top: 41px;
+    left: 48px;
+    width: 143px;
+    height: 16px;
+    font-size: 12px;
+    text-align: center;
+    color: #164e63;
+}
+
+.graph-labels .label-1 {
+    position: absolute;
+    top: 271px;
+    left: 431px;
+    width: 79px;
+    height: 23px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    color: #164e63;
+}
+
+.graph-labels .label-2 {
+    position: absolute;
+    top: 114px;
+    left: 370px;
+    width: 122px;
+    height: 9px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #164e63;
+}
+
+.graph-labels .label-3 {
+    position: absolute;
+    top: 452px;
+    left: 114px;
+    width: 166px;
+    height: 13px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    color: #164e63;
+}
+
+.graph-labels .indicator {
+    position: absolute;
+    top: 446px;
+    left: 89px;
+    width: 15px;
+    height: 33px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #14b8a6;
+}
+
+/* What We Do Section */
+.what-we-do-section {
+    padding: 200px 309px;
+    position: relative;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #6b7280;
+    margin-bottom: 16px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.4;
+}
+
+.decorative-circles {
+    position: relative;
+    opacity: 0.45;
+}
+
+.circle {
+    position: absolute;
+    border: 1px solid #979797;
+    border-radius: 50%;
+}
+
+.circle-1 {
+    width: 321px;
+    height: 321px;
+    left: -73px;
+    top: 200px;
+}
+
+.circle-2 {
+    width: 215px;
+    height: 215px;
+    right: -107px;
+    top: -6px;
+}
+
+.circle-3 {
+    width: 90px;
+    height: 90px;
+    left: 328px;
+    top: -95px;
+}
+
+.circle-4 {
+    width: 44px;
+    height: 44px;
+    right: 424px;
+    bottom: 77px;
+}
+
+/* Partner Section */
+.partner-section {
+    margin-bottom: 176px;
+}
+
+.partner-card {
+    background: white;
+    border-radius: 32px;
+    padding: 80px 96px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    max-width: 948px;
+    margin: 0 auto;
+}
+
+.partner-image {
+    width: 268px;
+    height: 296px;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.partner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.partner-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.partner-description {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.6;
+}
+
+/* Tools Section */
+.tools-section {
+    margin-bottom: 64px;
+}
+
+.tools-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Transform Section */
+.transform-section {
+    padding: 80px 128px 208px;
+}
+
+.transform-section .section-title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #000;
+    width: 387px;
+    margin-bottom: 64px;
+}
+
+.transform-card {
+    background: white;
+    border-radius: 33px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 100%;
+}
+
+.transform-image {
+    width: 100%;
+    height: 247px;
+    object-fit: cover;
+    border-radius: 32px 32px 0 0;
+}
+
+.transform-content {
+    padding: 24px 48px 32px;
+    text-align: center;
+}
+
+.transform-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.transform-description {
+    font-size: 16px;
+    color: #6b7280;
+    text-align: center;
+}
+
+/* Making Differences Section */
+.differences-section {
+    padding: 80px 0 208px;
+}
+
+.differences-card {
+    background: white;
+    border-radius: 32px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    padding-left: 80px;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.differences-content {
+    padding: 64px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.differences-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.differences-description {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.6;
+}
+
+.differences-image {
+    width: 600px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 24px 24px 0;
+}
+
+/* Case Study Section */
+.case-study-section {
+    padding: 80px 128px 176px;
+}
+
+.case-study-content {
+    background: white;
+    border-radius: 32px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 144px 64px;
+    position: relative;
+}
+
+.case-study-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    width: 337px;
+    margin-bottom: 10px;
+}
+
+.case-study-description {
+    font-size: 16px;
+    color: #000;
+    width: 365px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.carousel-arrows {
+    position: absolute;
+    bottom: -36px;
+    right: 42px;
+    display: flex;
+    gap: 10px;
+}
+
+.arrow-btn {
+    width: 72px;
+    height: 72px;
+    background: #164e63;
+    border: 1px solid #d4d4d8;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.arrow-btn:hover {
+    background: #0f3f4f;
+}
+
+.case-study-card {
+    background: white;
+    border-radius: 33px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 100%;
+}
+
+.case-study-image {
+    width: 100%;
+    height: 247px;
+    object-fit: cover;
+    border-radius: 32px 32px 0 0;
+}
+
+.case-study-card-content {
+    padding: 24px 16px 32px;
+    text-align: center;
+}
+
+.case-study-card-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.case-study-card-description {
+    font-size: 16px;
+    color: #6b7280;
+    text-align: center;
+}
+
+/* Footer */
+.footer-section {
+    background: #164e63;
+    border-radius: 40px;
+    padding: 80px 64px 10px;
+    max-width: 1284px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    margin-bottom: 40px;
+}
+
+.footer-brand {
+    width: 270px;
+}
+
+.footer-logo {
+    width: 120px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.footer-acknowledgment {
+    font-size: 12px;
+    color: #a7f3d0;
+    line-height: 1.6;
+    padding-bottom: 16px;
+}
+
+.footer-heading {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fbbf24;
+    margin-bottom: 4px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list li {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.footer-list li:hover {
+    color: #a7f3d0;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.footer-contact .footer-text,
+.footer-address .footer-text {
+    font-size: 14px;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 64px;
+}
+
+.social-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.faculty-logo {
+    width: 153px;
+    height: 34px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #6b7280;
+    padding: 16px 0;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    color: white;
+    width: 195px;
+}
+
+.powered-by {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.footer-privacy {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-privacy .footer-text {
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-privacy .footer-text:hover {
+    color: #a7f3d0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 20px 0;
+    }
+
+    .top-sections {
+        padding: 0 32px;
+    }
+
+    .hero-section {
+        padding: 20px 32px 64px;
+        border-radius: 24px;
+    }
+
+    .navbar {
+        margin-bottom: 64px;
+    }
+
+    .hero-headline {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .hero-images {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 40px;
+    }
+
+    .hero-img-1 {
+        width: 150px;
+        height: 160px;
+        right: 200px;
+    }
+
+    .hero-img-2 {
+        width: 140px;
+        height: 100px;
+        top: -40px;
+        right: 30px;
+    }
+
+    .hero-img-3 {
+        width: 90px;
+        height: 100px;
+        bottom: -20px;
+        right: 100px;
+    }
+
+    .hero-info-box {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .what-we-do-section {
+        padding: 64px 32px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .partner-card {
+        padding: 40px 32px;
+    }
+
+    .partner-image {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 32px;
+    }
+
+    .transform-section {
+        padding: 64px 32px 128px;
+    }
+
+    .transform-section .section-title {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .transform-content {
+        padding: 24px 20px 32px;
+    }
+
+    .differences-card {
+        padding-left: 32px;
+    }
+
+    .differences-content {
+        padding: 40px 0;
+    }
+
+    .differences-image {
+        width: 100%;
+        height: auto;
+        border-radius: 24px;
+        margin-top: 32px;
+    }
+
+    .case-study-section {
+        padding: 64px 32px 96px;
+    }
+
+    .case-study-content {
+        padding: 64px 32px;
+    }
+
+    .case-study-title {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .case-study-description {
+        width: 100%;
+    }
+
+    .carousel-arrows {
+        position: static;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .footer-section {
+        padding: 64px 32px 10px;
+        border-radius: 24px;
+    }
+
+    .footer-brand {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+
+    .footer-bottom .row > div {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .top-sections {
+        padding: 0 16px;
+    }
+
+    .hero-section {
+        padding: 16px 20px 40px;
+    }
+
+    .hero-headline {
+        font-size: 24px;
+    }
+
+    .what-we-do-section {
+        padding: 32px 16px;
+    }
+
+    .partner-card {
+        padding: 40px 20px;
+    }
+
+    .transform-section {
+        padding: 64px 16px 128px;
+    }
+
+    .differences-card {
+        padding-left: 20px;
+    }
+
+    .case-study-section {
+        padding: 64px 16px 96px;
+    }
+
+    .case-study-content {
+        padding: 64px 20px;
+    }
+
+    .footer-section {
+        padding: 64px 16px 10px;
+    }
+}
